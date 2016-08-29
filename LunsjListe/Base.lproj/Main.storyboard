@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,33 +19,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello world" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LL-eq-9ow">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Januar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LL-eq-9ow">
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAn-W3-ny8">
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" red="1" green="0.22349060444193869" blue="0.23476183963576114" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cc7-tJ-tqZ"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                <state key="normal" title="Gief lunsj!"/>
                                 <connections>
                                     <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KX7-IY-Pr8"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mandag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2U-9r-5ek">
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3LL-eq-9ow" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YJ4-Uu-VgM"/>
+                            <constraint firstItem="xAn-W3-ny8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QRl-dX-kwa"/>
+                            <constraint firstItem="xAn-W3-ny8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="Xle-qm-anG"/>
                             <constraint firstItem="3LL-eq-9ow" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eaM-bm-4lv"/>
                             <constraint firstItem="xAn-W3-ny8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gbb-TS-fYP"/>
-                            <constraint firstItem="xAn-W3-ny8" firstAttribute="top" secondItem="3LL-eq-9ow" secondAttribute="bottom" constant="12" id="rhP-xR-QqI"/>
+                            <constraint firstItem="E2U-9r-5ek" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pKh-Mz-A6F"/>
+                            <constraint firstItem="3LL-eq-9ow" firstAttribute="top" secondItem="E2U-9r-5ek" secondAttribute="bottom" constant="39" id="rwA-4N-P6N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xAn-W3-ny8" secondAttribute="trailing" constant="16" id="xIy-CP-2Uv"/>
+                            <constraint firstItem="E2U-9r-5ek" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="yrh-SH-wrk"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btn" destination="xAn-W3-ny8" id="ZE0-yd-jIE"/>
-                        <outlet property="lbl" destination="3LL-eq-9ow" id="nj2-KR-9TX"/>
+                        <outlet property="dateLabel" destination="3LL-eq-9ow" id="e1n-ub-pXN"/>
+                        <outlet property="weekdayLabel" destination="E2U-9r-5ek" id="jR5-sK-eQA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="91.304347826086968"/>
         </scene>
     </scenes>
 </document>

@@ -10,13 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var lbl: UILabel!
+    @IBOutlet weak var weekdayLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var btn: UIButton!
-    var counter = 0
     
     @IBAction func onClick(_ sender: UIButton) {
-        counter = counter + 1;
-        lbl.text = "\(counter)";
+        sender.backgroundColor = UIColor.green
     }
     
     override func viewDidLoad() {
