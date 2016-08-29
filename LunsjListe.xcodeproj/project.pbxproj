@@ -13,6 +13,7 @@
 		6687D0D21D74843E00A6D919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6687D0D11D74843E00A6D919 /* Assets.xcassets */; };
 		6687D0D51D74843E00A6D919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6687D0D31D74843E00A6D919 /* LaunchScreen.storyboard */; };
 		6687D0E01D74843E00A6D919 /* LunsjListeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6687D0DF1D74843E00A6D919 /* LunsjListeTests.swift */; };
+		6687D0EB1D749B0300A6D919 /* UIColor+LunsjListe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6687D0EA1D749B0300A6D919 /* UIColor+LunsjListe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		6687D0DB1D74843E00A6D919 /* LunsjListeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LunsjListeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6687D0DF1D74843E00A6D919 /* LunsjListeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunsjListeTests.swift; sourceTree = "<group>"; };
 		6687D0E11D74843E00A6D919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6687D0EA1D749B0300A6D919 /* UIColor+LunsjListe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+LunsjListe.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				6687D0D11D74843E00A6D919 /* Assets.xcassets */,
 				6687D0D31D74843E00A6D919 /* LaunchScreen.storyboard */,
 				6687D0D61D74843E00A6D919 /* Info.plist */,
+				6687D0EA1D749B0300A6D919 /* UIColor+LunsjListe.swift */,
 			);
 			path = LunsjListe;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6687D0CD1D74843E00A6D919 /* ViewController.swift in Sources */,
+				6687D0EB1D749B0300A6D919 /* UIColor+LunsjListe.swift in Sources */,
 				6687D0CB1D74843E00A6D919 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +410,7 @@
 				6687D0E61D74843E00A6D919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6687D0E71D74843E00A6D919 /* Build configuration list for PBXNativeTarget "LunsjListeTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +419,7 @@
 				6687D0E91D74843E00A6D919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
