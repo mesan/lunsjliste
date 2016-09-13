@@ -2,6 +2,10 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
+### CUSTOM IGNORES!!
+Pods/
+Podfile.lock
+
 ## Build generated
 build/
 DerivedData/
