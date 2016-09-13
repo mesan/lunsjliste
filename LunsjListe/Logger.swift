@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+class Logger {
+    class func printDebug(_ items: Any...) {
+        #if DEBUG
+            print(items)
+        #endif
+    }
+}

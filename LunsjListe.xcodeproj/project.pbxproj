@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		661B392B1D886353005D0D17 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661B392A1D886353005D0D17 /* HTTPClient.swift */; };
+		661B392D1D8867A4005D0D17 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661B392C1D8867A4005D0D17 /* Constants.swift */; };
+		661B392F1D887B17005D0D17 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661B392E1D887B17005D0D17 /* Logger.swift */; };
 		6687D0CB1D74843E00A6D919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6687D0CA1D74843E00A6D919 /* AppDelegate.swift */; };
 		6687D0CD1D74843E00A6D919 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6687D0CC1D74843E00A6D919 /* ViewController.swift */; };
 		6687D0D01D74843E00A6D919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6687D0CE1D74843E00A6D919 /* Main.storyboard */; };
@@ -14,6 +17,7 @@
 		6687D0D51D74843E00A6D919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6687D0D31D74843E00A6D919 /* LaunchScreen.storyboard */; };
 		6687D0E01D74843E00A6D919 /* LunsjListeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6687D0DF1D74843E00A6D919 /* LunsjListeTests.swift */; };
 		6687D0EB1D749B0300A6D919 /* UIColor+LunsjListe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6687D0EA1D749B0300A6D919 /* UIColor+LunsjListe.swift */; };
+		CF585432ADA12D7B63DF17E4 /* Pods_LunsjListe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B079C45043E924B1BBF38AD0 /* Pods_LunsjListe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AFE03EF4FCE188197E82AE6 /* Pods-LunsjListe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunsjListe.release.xcconfig"; path = "Pods/Target Support Files/Pods-LunsjListe/Pods-LunsjListe.release.xcconfig"; sourceTree = "<group>"; };
+		661B392A1D886353005D0D17 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		661B392C1D8867A4005D0D17 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		661B392E1D887B17005D0D17 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		6687D0C71D74843E00A6D919 /* LunsjListe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunsjListe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6687D0CA1D74843E00A6D919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6687D0CC1D74843E00A6D919 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +46,8 @@
 		6687D0DF1D74843E00A6D919 /* LunsjListeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunsjListeTests.swift; sourceTree = "<group>"; };
 		6687D0E11D74843E00A6D919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6687D0EA1D749B0300A6D919 /* UIColor+LunsjListe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+LunsjListe.swift"; sourceTree = "<group>"; };
+		AAC089526E80EBB79BAB9C01 /* Pods-LunsjListe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunsjListe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LunsjListe/Pods-LunsjListe.debug.xcconfig"; sourceTree = "<group>"; };
+		B079C45043E924B1BBF38AD0 /* Pods_LunsjListe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunsjListe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF585432ADA12D7B63DF17E4 /* Pods_LunsjListe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +69,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0638E594899F4FB1A4A3626F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAC089526E80EBB79BAB9C01 /* Pods-LunsjListe.debug.xcconfig */,
+				0AFE03EF4FCE188197E82AE6 /* Pods-LunsjListe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6687D0BE1D74843E00A6D919 = {
 			isa = PBXGroup;
 			children = (
 				6687D0C91D74843E00A6D919 /* LunsjListe */,
 				6687D0DE1D74843E00A6D919 /* LunsjListeTests */,
 				6687D0C81D74843E00A6D919 /* Products */,
+				0638E594899F4FB1A4A3626F /* Pods */,
+				CBAA8272F2594E4C8AE55C79 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +101,7 @@
 		6687D0C91D74843E00A6D919 /* LunsjListe */ = {
 			isa = PBXGroup;
 			children = (
+				661B392A1D886353005D0D17 /* HTTPClient.swift */,
 				6687D0CA1D74843E00A6D919 /* AppDelegate.swift */,
 				6687D0CC1D74843E00A6D919 /* ViewController.swift */,
 				6687D0CE1D74843E00A6D919 /* Main.storyboard */,
@@ -86,6 +109,8 @@
 				6687D0D31D74843E00A6D919 /* LaunchScreen.storyboard */,
 				6687D0D61D74843E00A6D919 /* Info.plist */,
 				6687D0EA1D749B0300A6D919 /* UIColor+LunsjListe.swift */,
+				661B392C1D8867A4005D0D17 /* Constants.swift */,
+				661B392E1D887B17005D0D17 /* Logger.swift */,
 			);
 			path = LunsjListe;
 			sourceTree = "<group>";
@@ -99,6 +124,14 @@
 			path = LunsjListeTests;
 			sourceTree = "<group>";
 		};
+		CBAA8272F2594E4C8AE55C79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B079C45043E924B1BBF38AD0 /* Pods_LunsjListe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6687D0E41D74843E00A6D919 /* Build configuration list for PBXNativeTarget "LunsjListe" */;
 			buildPhases = (
+				854F07EC2A4FB5A68738D3E1 /* [CP] Check Pods Manifest.lock */,
 				6687D0C31D74843E00A6D919 /* Sources */,
 				6687D0C41D74843E00A6D919 /* Frameworks */,
 				6687D0C51D74843E00A6D919 /* Resources */,
+				D4BDD0401C424304B1202796 /* [CP] Embed Pods Frameworks */,
+				C1B4D6121110FB4E144D88F6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,10 +185,12 @@
 				TargetAttributes = {
 					6687D0C61D74843E00A6D919 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					6687D0DA1D74843E00A6D919 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 6687D0C61D74843E00A6D919;
 					};
@@ -197,13 +235,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		854F07EC2A4FB5A68738D3E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1B4D6121110FB4E144D88F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LunsjListe/Pods-LunsjListe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4BDD0401C424304B1202796 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LunsjListe/Pods-LunsjListe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6687D0C31D74843E00A6D919 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				661B392D1D8867A4005D0D17 /* Constants.swift in Sources */,
+				661B392F1D887B17005D0D17 /* Logger.swift in Sources */,
 				6687D0CD1D74843E00A6D919 /* ViewController.swift in Sources */,
 				6687D0EB1D749B0300A6D919 /* UIColor+LunsjListe.swift in Sources */,
+				661B392B1D886353005D0D17 /* HTTPClient.swift in Sources */,
 				6687D0CB1D74843E00A6D919 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +430,7 @@
 		};
 		6687D0E51D74843E00A6D919 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAC089526E80EBB79BAB9C01 /* Pods-LunsjListe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LunsjListe/Info.plist;
@@ -353,6 +443,7 @@
 		};
 		6687D0E61D74843E00A6D919 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AFE03EF4FCE188197E82AE6 /* Pods-LunsjListe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LunsjListe/Info.plist;

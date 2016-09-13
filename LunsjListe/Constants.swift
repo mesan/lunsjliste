@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+enum Constants {
+    
+    struct ApiEndpoints {
+        
+    }
+    
+    struct DateSignupRestrictions {
+        static let MAXIMUM_AMOUNT_OF_DAYS_IN_FUTURE_FOR_SIGNUP = 15
+    }
+}

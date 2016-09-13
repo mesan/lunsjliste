@@ -17,14 +17,14 @@ typealias HTTPResult = (Data?, Error?) -> Void
 class HTTPClient {
     private let urlSession: URLSession
     
-    init(urlSession: URLSession = Config.urlSession) {
+    init(urlSession: URLSession) {
         self.urlSession = urlSession
     }
     
     func get(url: URL, token: String, completion: HTTPResult) {
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
-        request.setValue(token, forHTTPHeaderField: Constants.Headers.authorization)
+        //request.setValue(token, forHTTPHeaderField: Constants.Headers.authorization)
         
         let task = urlSession.dataTask(with: request) { (data, response, error) in
            self.handleResponse(data: data, response: response, error: error, completion: completion)
@@ -49,7 +49,7 @@ class HTTPClient {
     
     private func handleResponse(data: Data?, response: URLResponse?, error: Error?, completion: HTTPResult) {
         if error != nil  {
-            Logger.printDebug(error?.localizedDescription)
+            //Logger.printDebug(error?.localizedDescription)
             completion(nil, HTTPError.NetworkError)
         } else if let response = response as? HTTPURLResponse , 200...299 ~= response.statusCode {
             completion(data, nil)
